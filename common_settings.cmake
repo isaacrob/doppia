@@ -346,6 +346,9 @@ elseif(${HOSTNAME} STREQUAL  "uold-newton")
   # start with an empty section, and see what fails as you go through the readme.text instructions
   set(Boost_INCLUDE_DIR "/home/isaac/doppia/libs/boost")
 
+elseif(${HOSTNAME} STREQUAL "newton")
+  message(STATUS "Using home big one")
+
 else ()
   message(FATAL_ERROR, "Unknown machine, please add your configuration inside doppia/common_settings.cmake")
   # see the elseif section above
